@@ -12,10 +12,15 @@ if opcion == "1":
     pesos=pesos.replace(".", "").replace("," , "")
     resultado= float(pesos) / precio_dolar  
     print(f"tenes {resultado:,.2f}dolares")
+    with open("historial.txt" , "a") as archivo:
+        archivo.write(f"Pesos a dolares: {pesos} pesos={resultado:.2f} dolares\n")
 elif opcion == "2":
     dolares=input("Ingresa el monto en dolares: ")
+    dolares= dolares.replace("," , "").replace("," , "")
     resultado= float(dolares) * precio_dolar
     print(f"tenes {resultado:,.2f} pesos")
+    with open("historial.txt" , "a") as archivo:
+        archivo.write(f"dolares a pesos: {dolares} dolares={resultado:.2f} pesos\n")
 elif opcion == "3":
     print("Chau!3")
-    
+        
