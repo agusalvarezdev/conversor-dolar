@@ -1,8 +1,11 @@
 import requests
-url = "https://dolarapi.com/v1/dolares/blue"
+url = "https://dolarapi.com/v1/dolares"
 respuesta =requests.get(url)
 datos = respuesta.json()
-precio_dolar= datos ["venta"]
+for dolar in datos:
+    print(f"{dolar['nombre']}: compra{dolar['compra']} - venta {dolar['venta']}")
+blue = next(item for item in datos if item["casa"]== "blue")
+precio_dolar = blue["venta"]
 print("1-Pesos a Dolares")
 print("2-Dolares a Pesos")
 print("3. Salir")
