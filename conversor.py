@@ -1,3 +1,4 @@
+from datetime import datetime
 import requests
 url = "https://dolarapi.com/v1/dolares"
 respuesta =requests.get(url)
@@ -15,13 +16,15 @@ if opcion == "1":
     pesos=pesos.replace(".", "").replace("," , "")
     resultado= float(pesos) / precio_dolar  
     print(f"tenes {resultado:,.2f}dolares")
-    with open("historial.txt" , "a") as archivo:
-        archivo.write(f"Pesos a dolares: {pesos} pesos={resultado:.2f} dolares\n")
+    ahora = datetime.now().strftime("%d/%m/%Y %H:%M")
+    with open("historia.txt" , "a") as archivo:
+        archivo.write(f"{ahora} -Pesos a dolares: {pesos} pesos={resultado:.2f} dolares\n")
 elif opcion == "2":
     dolares=input("Ingresa el monto en dolares: ")
     dolares= dolares.replace("," , "").replace("," , "")
     resultado= float(dolares) * precio_dolar
     print(f"tenes {resultado:,.2f} pesos")
+    ahora = datetime.now().strftime("%d/%m/%Y %H:%M")
     with open("historial.txt" , "a") as archivo:
         archivo.write(f"dolares a pesos: {dolares} dolares={resultado:.2f} pesos\n")
 elif opcion == "3":
