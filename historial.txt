@@ -1,0 +1,3 @@
+dolares a pesos: 120 dolares=169800.00 pesos
+15/03/2026 20:46 - Pesos a dolares: 2000 pesos = 1.41 dolares
+15/03/2026 21:36 - Pesos a dolares: 20000 pesos = 14.13 dolares

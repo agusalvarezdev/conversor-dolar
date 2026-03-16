@@ -1,0 +1,7 @@
+1403&2026 12:33 -Pesos a dolares: 2000 pesos=1.41 dolares
+1403&2026 12:33 -Pesos a dolares: 2000000000 pesos=1413427.56 dolares
+1403&2026 12:34 -Pesos a dolares: 200000 pesos=141.34 dolares
+14032026 12:36 -Pesos a dolares: 2000000 pesos=1413.43 dolares
+14032026 12:36 -Pesos a dolares: 400000 pesos=282.69 dolares
+14/03/2026 12:37 -Pesos a dolares: 700000 pesos=494.70 dolares
+15/03/2026 20:21 -Pesos a dolares: 20000 pesos=14.13 dolares
